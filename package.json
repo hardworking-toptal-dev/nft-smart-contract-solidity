@@ -1,0 +1,49 @@
+{
+  "name": "hardhat-nft-smart-contract",
+  "private": true,
+  "scripts": {
+    "clean": "npx hardhat clean",
+    "rename-contract": "hardhat rename-contract",
+    "coverage": "npx hardhat coverage",
+    "lint": "npx solhint contracts/**/*.sol",
+    "lint:fix": "npx solhint --fix contracts/**/*.sol",
+    "close": "npx hardhat run scripts/00-close-sales.ts",
+    "open-allowlist": "npx hardhat run scripts/01-open-allowlist-sale.ts",
+    "open-public": "npx hardhat run scripts/02-open-public-sale.ts",
+    "reveal": "npx hardhat run scripts/03-reveal-collection.ts"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.6.0",
+    "dotenv": "^16.0.1",
+    "ethers": "^5.6.8",
+    "keccak256": "^1.0.6",
+    "merkletreejs": "^0.2.31"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "npm:hardhat-deploy-ethers@^0.3.0-beta.13",
+    "@nomiclabs/hardhat-etherscan": "^3.1.0",
+    "@nomiclabs/hardhat-waffle": "^2.0.3",
+    "@typechain/ethers-v5": "^10.1.0",
+    "@typechain/hardhat": "^6.1.0",
+    "@types/chai": "^4.3.1",
+    "@types/chai-as-promised": "^7.1.5",
+    "@types/mocha": "^9.1.1",
+    "@types/node": "^17.0.43",
+    "@typescript-eslint/eslint-plugin": "^5.28.0",
+    "@typescript-eslint/parser": "^5.28.0",
+    "chai": "^4.3.6",
+    "erc721a": "^4.1.0",
+    "ethereum-waffle": "^3.4.4",
+    "hardhat": "^2.9.9",
+    "hardhat-contract-sizer": "^2.5.1",
+    "hardhat-deploy": "^0.11.10",
+    "hardhat-gas-reporter": "^1.0.8",
+    "prettier": "^2.7.0",
+    "prettier-plugin-solidity": "^1.0.0-beta.19",
+    "solhint": "^3.3.7",
+    "solidity-coverage": "^0.7.21",
+    "ts-node": "^10.8.1",
+    "typechain": "^8.1.0",
+    "typescript": "^4.7.3"
+  }
+}
