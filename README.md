@@ -105,6 +105,4 @@ npm run close -- --network <networkName>
 npm run reveal -- --network <networkName>
 ```
 
-## A dApp for front end
 
-A [sample dApp](https://github.com/kjmczk/nextjs-nft-mint-dapp) for this contract is available!
